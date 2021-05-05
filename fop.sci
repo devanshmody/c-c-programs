@@ -1,0 +1,24 @@
+a=[0.1,0.2,0.3,0.4,0.5];
+b=[0.4,0.5,0.6,0.7,0.8];
+c=[1,1,1,1,1];
+A=union(a,b);
+disp(A);
+subplot(4,4,1);
+plot(A,'r');
+xtitle('union');
+B=intersect(a,b);
+disp(B);
+subplot(4,4,2);
+plot(B,'g');
+xtitle('intersection');
+C=c-a;
+disp(C);
+subplot(4,4,3);
+plot(C,'b');
+xtitle('a complement');
+D=c-b;
+disp(D);
+subplot(4,4,4);
+plot(D,'m');
+xtitle('b complement');
+
